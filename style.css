@@ -1,0 +1,87 @@
+/*CSS Global Selectors*/
+body {
+  background-color: #102027;
+}
+
+
+/* CSS Custom Colors */
+.background-green-col {
+  background-color: #00E676;
+}
+
+.background-card-col {
+  background-color: #00f37e;
+}
+
+.sheet-div {
+  display: flex;
+  justify-content: center; 
+  align-items: center
+}
+
+a.d-block {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* CSS IDs */
+#liveHours {white-space: nowrap !important;} 
+
+#sit-navbar {white-space: nowrap !important; overflow: hidden; flex-wrap: nowrap;}
+
+#subjectTime, #teacherInfo {width: 80%;}
+
+#pdf-canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#mimo-install-banner-mobile {
+    display: none !important;
+}
+
+#mimo-install-banner {
+    display: none !important;
+}
+
+/*@media only screen and (max-width: 600px) {
+  #textAlert {width: 50px;}
+}*/
+
+/* Para PCs */
+@media (min-width: 768px) { /* Quando a tela for maior que 768px */
+    body {
+        font-size: 1.2rem; /* Aumenta o tam. texto */
+    }
+
+    .btn {
+        font-size: 1.1rem; /* Aumenta tam. dos botões */
+        padding: 12px 24px;
+    }
+
+    .container {
+        max-width: 80%; /* Diminui largura dos conteudos */
+        margin: 0 auto;
+    }
+
+    #pdf-canvas {    
+    max-width: 50%; /* Diminui o tamanho total, em PCs 100% fica GIGANTE*/
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    }
+}
+
+/* Para celular */
+@media (max-width: 768px) {
+      #subjectTime {
+        width: 100%;
+    }
+      /* Deixa ambas as planilhas com largura total, devido a um erro */
+      #teacherInfo {
+        width: 100%;
+      }
+}

@@ -2,13 +2,14 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase
 import { getDatabase, ref, onValue, set } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
 
   // API e DADOS - FireBase
+  // Foram omitidos por questões de segurança
   const firebaseConfig = {
   apiKey: "",
   authDomain: "",
   databaseURL: "",
   projectId: "",
   storageBucket: "",
-  messagingSenderId: "32377279579",
+  messagingSenderId: "",
   appId: "",
   measurementId: ""
 };

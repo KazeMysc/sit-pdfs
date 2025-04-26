@@ -21,7 +21,7 @@ Para editar o código e fazer mudanças a página, deve-se baixar todos os scrip
 # Usando o Mimo.org para hospedar
 No computador, acesse o [Mimo.org](https://mimo.org/) e faça login de usuário, vá até a seção `build` e crie um novo `projeto`:
 
-![Print que mostra a interface do mimo.org no computador na seção de build para criação de um novo projeto.](https://i.ibb.co/TpMWqjY/1276x648.png)
+![Print que mostra a interface do mimo.org no computador na seção de build para criação de um novo projeto.](https://i.ibb.co/b5qN8kt2/1276x648.png)
 
 Em seguida, escolha um static website:
 

@@ -1,36 +1,35 @@
 const classContainer = document.querySelector('#teacherInfo');
 
-
 const hot = new Handsontable(classContainer, {
   data: [
     // 0
-    {cod: 'TIDES0353', materia: 'Língua Portuguesa', professor:'' , turma: 'I2261TH', periodo: '6T12 (12/03/2025 - 14/07/2025)'},
+    {cod: 'TIDES0353', materia: 'Língua Portuguesa', professor:'Mirian Pereira' , turma: 'I2261TH', periodo: '6T12 (12/03/2025 - 14/07/2025)'},
     // 1
     {cod: 'TIDES0354', materia: 'Inglês', professor:'Cristiane Ribeiro Barbosa da Silva' , turma: 'I2261TH', periodo: '2T12 (12/03/2025 - 14/07/2025)'},
     // 2
     {cod: 'TIDES0355', materia: 'Ed. Física', professor:'Biratan dos Santos Palmeira' , turma: 'I2261TH', periodo: '4T56 (12/03/2025 - 14/07/2025)'},
     // 3
-    {cod: 'TIDES0357', materia: 'Sociologia', professor:'' , turma: 'I2261TH', periodo: '5T34 (12/03/2025 - 14/07/2025)'},
-    // 4
-    {cod: 'TIDES0358', materia: 'Filosofia', professor:'' , turma: 'I2261TH', periodo: '4T12 (12/03/2025 - 14/07/2025)'},
+    {cod: 'TIDES0357', materia: 'Sociologia', professor:'Breno Rodrigo de Oliveira Alencar' , turma: 'I2261TH', periodo: '5T34 (12/03/2025 - 14/07/2025)'},
+    // 4 antigo prof filosofia Walber Wolgrand Menezes Marques
+    {cod: 'TIDES0358', materia: 'Filosofia', professor:'Alessandra' , turma: 'I2261TH', periodo: '4T12 (12/03/2025 - 14/07/2025)'},
     // 5
-    {cod: 'TIDES0359', materia: 'História', professor:'' , turma: 'I2261TH', periodo: '6T34 (12/03/2025 - 14/07/2025)'},
+    {cod: 'TIDES0359', materia: 'História', professor:'Humberto de Castro Brito' , turma: 'I2261TH', periodo: '6T34 (12/03/2025 - 14/07/2025)'},
     // 6
-    {cod: 'TIDES0360', materia: 'Geografia', professor:'' , turma: 'I2261TH', periodo: '5T12 (12/03/2025 - 14/07/2025)'},
+    {cod: 'TIDES0360', materia: 'Geografia', professor:'Ellen Cristina do Monte Silva' , turma: 'I2261TH', periodo: '5T12 (12/03/2025 - 14/07/2025)'},
     // 7
-    {cod: 'TIDES0361', materia: 'Biologia', professor:'' , turma: 'I2261TH', periodo: '4T34 (12/03/2025 - 14/07/2025)'},
+    {cod: 'TIDES0361', materia: 'Biologia', professor:'---' , turma: 'I2261TH', periodo: '4T34 (12/03/2025 - 14/07/2025)'},
     // 8
-    {cod: 'TIDES0362', materia: 'Química', professor:'' , turma: 'I2261TH', periodo: '2T56 (12/03/2025 - 14/07/2025)'},
+    {cod: 'TIDES0362', materia: 'Química', professor:'Celio Hitoshi Wataya' , turma: 'I2261TH', periodo: '2T56 (12/03/2025 - 14/07/2025)'},
     // 9
-    {cod: 'TIDES0363', materia: 'Física', professor:'' , turma: 'I2261TH', periodo: '6T56 (12/03/2025 - 14/07/2025)'},
+    {cod: 'TIDES0363', materia: 'Física', professor:'Pedro Paulo Santos da Silva' , turma: 'I2261TH', periodo: '6T56 (12/03/2025 - 14/07/2025)'},
     // 10
-    {cod: 'TIDES0364', materia: 'Matemática', professor:'' , turma: 'I2261TH', periodo: '2T34 (12/03/2025 - 14/07/2025)'},
+    {cod: 'TIDES0364', materia: 'Matemática', professor:'Gilvan Lira Souza' , turma: 'I2261TH', periodo: '2T34 (12/03/2025 - 14/07/2025)'},
     // 11
-    {cod: 'TIDES0365', materia: 'Algoritmos & Prog. de Computadores', professor:'' , turma: 'I2261TH', periodo: '3T123456 (12/03/2025 - 14/07/2025)'},
+    {cod: 'TIDES0365', materia: 'Algoritmos & Prog. de Computadores', professor:'Mauro de Jesus Pereira' , turma: 'I2261TH', periodo: '3T123456 (12/03/2025 - 14/07/2025)'},
     // 12
-    {cod: 'TIDES0366', materia: 'Fundamentos de Informática', professor:'' , turma: 'I2261TH', periodo: '7T12 (12/03/2025 - 14/07/2025)'},
+    {cod: 'TIDES0366', materia: 'Fundamentos de Informática', professor:'Clóvis Maxwell Andrade Martins' , turma: 'I2261TH', periodo: '7T12 (12/03/2025 - 14/07/2025)'},
     // 13
-    {cod: 'TIDES0367', materia: 'Sistemas Operacionais', professor:'' , turma: 'I2261TH', periodo: '5T56 (12/03/2025 - 14/07/2025)'},
+    {cod: 'TIDES0367', materia: 'Sistemas Operacionais', professor:'Geovane Nobre Lamarao' , turma: 'I2261TH', periodo: '5T56 (12/03/2025 - 14/07/2025)'},
   ],
   colHeaders: ['Cód. Matéria', 'Matéria', 'Professor', 'Turma', 'Período - Matéria'],
   columns: [

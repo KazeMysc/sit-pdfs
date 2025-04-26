@@ -13,6 +13,10 @@ body {
   background-color: #00f37e;
 }
 
+.background-bright-green {
+  background-color: #3bffa0;
+}
+
 .sheet-div {
   display: flex;
   justify-content: center; 

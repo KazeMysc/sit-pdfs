@@ -27,31 +27,34 @@
 
     <!--Container de botoes 1-->
     <div class="container w-75">
-      <div class="d-grid gap-2 ">
-        <button onclick="window.location.href='horario.html'" type="button" id="btn-1" class="btn btn-success background-green-col mt-5 d-inline-block "><span>Horários</span>
-
-        </button>
-        <button onclick="window.location.href='calendario.html'" type="button" class="btn btn-success background-green-col">Calendário</button>
-      </div>
-       <!--Container de botoes 2-->
       <div class="d-grid gap-2">
-        <button type="button" class="btn btn-success background-green-col mt-4">
-          Trabalhos Pendentes
+        <button onclick="window.location.href='horario.html'" type="button" id="btn-1" class="btn btn-success background-green-col mt-5 d-inline-block p-3"><span>Horários de Aula</span>
         </button>
-        <button type="button" class="btn btn-success background-green-col">Função 4</button>
+        <button onclick="window.location.href='calendario.html'" type="button" class="btn btn-success background-green-col p-3">Calendário Acadêmico</button>
+        <button onclick="window.location.href='pendentes.html'" type="button" class="btn btn-success background-green-col p-3">
+          Atividades Pendentes
+        </button>
       </div>
+
+       <!--Container de botoes 2-->
+      <!--<div class="d-grid">
+        <button type="button" class="btn btn-success background-green-col">Função 4</button>
+      </div>-->
+
       <!--Container de botoes 3-->
       <div class="d-grid gap-2">
-        <button type="button" class="btn btn-success background-green-col mt-4">
+        <!--<button type="button" class="btn btn-success background-green-col mt-4">
           Informações - SIT
-        </button>
-        <button type="button" class="btn btn-success background-green-col">Contato & Suporte</button>
-        <button onclick="window.location.href='sobre.html'" type="button" class="btn btn-success background-green-col d-inline-block "><span>Sobre</span></button>
+        </button>-->
+        <button onclick="window.location.href='help.html'" type="button" class="btn btn-success background-green-col mt-4 p-3">Contato & Suporte</button>
+        <button onclick="window.location.href='sobre.html'" type="button" class="btn btn-success background-green-col d-inline-block  p-3"><span>Sobre</span></button>
       </div>
+        
+      
     </div>
 
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="script.js"></script>
+    <script type="module" src="firebase.js"></script>
     <script type="text/javascript" src="liveClock.js"></script> 
   </body>
 </html>

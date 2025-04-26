@@ -1,4 +1,4 @@
-# SIT - System
+# SIT - Sistema Interno de Turma
 > ⚠️ O SIT ainda está em fase de desenvolvimento, logo, muitos `bugs` e problemas de `adaptabilidade` a dispositivos podem ocorrer.
 > Por enquanto, todos os scripts ficam em um `único diretório raiz`, porque ainda não tenho um host.
 

@@ -14,7 +14,7 @@ O SIT, atualmente, providencia horários de aula reformulados em planilhas usand
 - Mais recursos ainda serão adicionados, como o calendário de provas e tutoriais de programação!
 
 # Editando o Código
-> [!NOTE]
+> [!NOTA]
 > Todos os arquivos estão organizados em apenas um diretório raiz, caso eles sejam estruturados em pastas, o acesso aos scripts devem ser referenciados corretamente.
 Para editar o código e fazer mudanças a página, deve-se baixar todos os scripts, armazená-los em um único diretório e abrir um servidor local para que as mudanças sejam observadas.
 

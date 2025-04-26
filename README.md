@@ -5,7 +5,7 @@
 O SIT é uma interface web simples que foi feito com o objetivo de reformular dados de horários e trabalhos à turma de Desenvolvimento de Sistemas - I2261TH. Atualmente, segue sendo programado por apenas uma pessoa.
 
 # Visão Geral
-O SIT, atualmente, providencia horários de aula reformulados em planilhas usando o framework [HandsOnTable](https://handsontable.com/). Para o estilo da página, foi usado o [BootStrap 5](https://getbootstrap.com/). E para exibir O PDF na página, foi usado o [PDF.js](https://mozilla.github.io/pdf.js/).
+O SIT, atualmente, providencia horários de aula reformulados em planilhas usando o framework [HandsOnTable](https://handsontable.com/). Para o estilo da página, foi usado o [BootStrap 5](https://getbootstrap.com/). E para exibir o PDF na página, foi usado o [PDF.js](https://mozilla.github.io/pdf.js/).
 
 # Recursos
 - Acesso ao Calendário Acadêmico de 2025 de forma simples e rápida;

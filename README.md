@@ -20,16 +20,20 @@ Para editar o código e fazer mudanças a página, deve-se baixar todos os scrip
 
 # Usando o Mimo.org para hospedar
 No computador, acesse o [Mimo.org](https://mimo.org/) e faça login de usuário, vá até a seção `build` e crie um novo `projeto`:
+
 ![Print que mostra a interface do mimo.org no computador na seção de build para criação de um novo projeto.](https://i.ibb.co/TpMWqjY/1276x648.png)
 
 Em seguida, escolha um static website:
+
 ![Print que mostra a escolha do static website para a criação do website.](https://i.ibb.co/NnjY2zbp/1276x648-2.png)
 
 Parabéns! Você criou um novo projeto e viu seu primeiro Hello World em HTML! Essa é a tela da IDE que é usada no SIT, e pode ser usada por você:
+
 ![Print da tela do ambiente de desenvolvimento integrado do mimo.org](https://i.ibb.co/dw4YRRNQ/1276x648-3.png)
 
 # Configurando os Arquivos no Mimo
 Agora você pode copiar o código de cada arquivo do `GitHub` e colar em cada script no mimo. Para fazer isso, é necessário criar um arquivo com os devidos nomes, ou de sua preferência (caso queira mudar).
+
 ![GIF que mostra o processo de criação de arquivos no mimo](https://i.ibb.co/27Lm6qLP/gif-1.gif)
 
 # Contribuindo

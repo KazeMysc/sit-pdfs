@@ -3,10 +3,13 @@ body {
   background-color: #102027;
 }
 
-
 /* CSS Custom Colors */
 .background-green-col {
   background-color: #00E676;
+}
+
+.background-d-green-col {
+  background-color: #01c265;
 }
 
 .background-card-col {
@@ -15,6 +18,10 @@ body {
 
 .background-bright-green {
   background-color: #3bffa0;
+}
+
+.background-bright-yellow-col {
+  background-color: #ffaa00
 }
 
 .sheet-div {

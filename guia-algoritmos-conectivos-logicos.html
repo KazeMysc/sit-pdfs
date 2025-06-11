@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width initial-scale=1, shrink-to-fit=no"
+    />
+    <title>SIT - Sistema Interno de Turma</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/handsontable/styles/handsontable.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/handsontable/styles/ht-theme-main.min.css">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+  </head>
+  <body onload="startClock()" style="padding-top: 56px;">
+  <!--NAVBAR-->
+  <nav class="navbar background-green-col fixed-top">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <a class="navbar-brand text-white" href="#">SIT - Sistema Interno de Turma</a>
+
+    <div class="d-flex align-items-center gap-3">
+      <span id="liveHours" class="text-white small"></span>
+      <button class="navbar-toggler btn-sm p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    </div>
+    
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+      <div class="offcanvas-header background-d-green-col">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Capítulos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <!-- Corpo do OFFCANVAS -->
+      <div class="offcanvas-body background-card-col">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="guia-algoritmos.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="guia-algoritmos-intro.html">Lógica Proposicional - Introdução</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="guia-algoritmos-conectivos-logicos.html">
+            Lógica Proposicional - Conectivos Lógicos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="guia-algoritmos-proposicoes-em-cpp.html">
+            Lógica Proposicional - Proposições em C++</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <!-- Botão de Retornar -->
+    <button
+      class="btn btn-success background-green-col mt-1 ms-1 d-block"
+      onclick="window.location.href='guias.html'"
+    >
+      <span><</span>
+    </button>
+
+    <!-- Título Principal Guia -->
+    <h2 class="ms-4 mt-4 text-white text-start">
+      Lógica Proposicional
+    </h2>
+    <hr class="border border-1 opacity-40">
+
+    <h4 class="ms-4 mt-4 mb-3 text-white text-start">Conectivos Lógicos</h4>
+
+    <p class="ms-4 lh-base text-white text-justify">Conectivos lógicos são palavras ou símbolos usados para ligar proposições.</p>
+    <p class="ms-4 lh-base text-white text-justify">Proposições são frases que podem ser verdadeiras ou falsas, como a mostrada abaixo.</p>
+    <p class="ms-4 lh-base text-white text-justify">Pensa nos conectivos como &quotpontes&quot entre ideias. Eles ajudam a combinar frases de maneira lógica.</p>
+
+    <div class="background-card-col code-block d-block mx-auto border mb-3 ms-md-4 me-md-4">
+  <h5 class="text-center text-white mt-1">Exemplo</h5>
+    <pre><code>&#47&#47Pode ser verdadeiro ou falso
+Proposição: &quotSe está chovendo, então eu vou levar o guarda-chuva&quot</code></pre>
+</div>
+
+    <h4 class="ms-4 mt-4 mb-3 text-white text-start">Os principais conectivos lógicos são:</h4>
+    <!-- Tabela de Conectivos -->
+    <div class="ms-3 me-3">
+    <table class="mx-auto simple-table ">
+      <tr>
+        <th class="border-left text-white ps-2 pe-2 text-center" >Nome</th>
+        <th class="text-white ps-2 pe-2 text-center">Símbolo</th>
+        <th class="text-white ps-2 pe-2 text-center">Exemplo</th>
+        <th class="border-right text-white ps-2 pe-2 text-center">Significado</th>
+      </tr>
+      <tr>
+        <td class="border-left text-white p-2 text-center">Negação</td>
+        <td class="text-white p-2 text-center">¬A</td>
+        <td class="text-white p-2 text-center">"Não A"</td>
+        <td class="border-right text-white p-2 text-center">Inverte o valor de A</td>
+      </tr>
+      <tr>
+        <td class="border-left text-white p-2 text-center">Conjunção</td>
+        <td class="text-white p-2 text-center">	A ∧ B</td>
+        <td class="text-white p-2 text-center">&quotA e B&quot</td>
+        <td class="border-right text-white p-2 text-center">Só é verdadeiro se os dois forem</td>
+      </tr>
+      <tr>
+        <td class="border-left text-white p-2 text-center">Disjunção</td>
+        <td class="text-white p-2 text-center">A ∨ B</td>
+        <td class="text-white p-2 text-center">&quotA ou B&quot</td>
+        <td class="border-right text-white p-2 text-center">É verdadeiro se pelo menos um for</td>
+      </tr>
+      <tr>
+        <td class="border-left text-white p-2 text-center">Condicional</td>
+        <td class="text-white p-2 text-center">A → B</td>
+        <td class="text-white p-2 text-center">&quotSe A, então B&quot</td>
+        <td class="border-right text-white p-2 text-center">	Se A for verdadeiro, B também deve ser</td>
+      </tr>
+      <tr>
+        <td class="border-left text-white p-2 text-center">Bicondicional</td>
+        <td class="text-white p-2 text-center">A ↔ B</td>
+        <td class="text-white p-2 text-center">&quotA se, e somente se, B&quot</td>
+        <td class="border-right text-white p-2 text-center">Os dois precisam ter o mesmo valor</td>
+      </tr>
+    </table>
+    </div>
+
+    <p class="mt-3 ms-4 lh-base text-white text-justify">Embora possa parecer um pouco confuso à primeira vista, vai fazer total sentido quando essa lógica for aplicada ao código real.</p>    
+    <hr class="border border-1 opacity-40">
+
+
+    <div class="d-flex flex-row justify-content-between m-3">
+    <button onclick="window.location.href='guia-algoritmos-intro.html'" type="button" class="btn btn-success background-green-col fw-bold mt-4 p-3">Voltar Capítulo</button> 
+    <button onclick="window.location.href='guia-algoritmos-proposicoes-em-cpp.html'" type="button" class="btn btn-success background-green-col fw-bold mt-4 p-3">Próximo Capítulo</button>  
+    </div>
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/handsontable/dist/handsontable.full.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>  
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="liveClock.js"></script>
+  </body>
+</html>

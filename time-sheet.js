@@ -1,4 +1,3 @@
-//Planilha de Horários
 const container = document.querySelector('#subjectTime');
 
 new Handsontable(container, {
@@ -7,8 +6,8 @@ new Handsontable(container, {
     { horario: '13:50 a 14:40', dom: '---', seg: 'Inglês', ter: 'Algoritmos & Prog. de Computadores', qua: 'Filosofia', qui: 'Geografia', sex: 'Língua Portuguesa', sab: 'Fundamentos de Informática'},
     { horario: '14:40 a 15:30', dom: '---', seg: 'Matemática', ter: 'Algoritmos & Prog. de Computadores', qua: 'Biologia', qui: 'Sociologia', sex: 'História', sab:'---'},
     { horario: '15:50 a 16:40', dom: '---', seg: 'Matemática', ter: 'Algoritmos & Prog. de Computadores', qua: 'Biologia', qui: 'Sociologia', sex: 'História', sab:'---'},
-    { horario: '16:40 a 15:30', dom: '---', seg: 'Química', ter: 'Algoritmos & Prog. de Computadores', qua: 'Ed. Física', qui: 'S. Operacionais', sex: 'Física', sab:'---'},
-    { horario: '14:40 a 15:30', dom: '---', seg: 'Química', ter: 'Algoritmos & Prog. de Computadores', qua: 'Ed. Física', qui: 'S. Operacionais', sex: 'Física', sab: '---'},
+    { horario: '16:40 a 17:30', dom: '---', seg: 'Química', ter: 'Algoritmos & Prog. de Computadores', qua: 'Ed. Física', qui: 'S. Operacionais', sex: 'Física', sab:'---'},
+    { horario: '17:30 a 18:20', dom: '---', seg: 'Química', ter: 'Algoritmos & Prog. de Computadores', qua: 'Ed. Física', qui: 'S. Operacionais', sex: 'Física', sab: '---'},
   ],
   colHeaders: ['Horário', 'Dom', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'],
   columns: [

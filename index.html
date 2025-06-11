@@ -22,36 +22,26 @@
     </div>
 
     <!-- CAIXA DE ALERTA --> 
-    <p class="p-3 mb-1 bg-primary text-center bg-warning text-white border border-2 rounded-bottom w-75 mx-auto" id="textAlert"
+    <p class="p-3 mb-1 bg-primary text-center bg-warning fw-bold text-white border border-2 rounded-bottom w-75 mx-auto" id="textAlert"
     >Sem alertas</p>
 
     <!--Container de botoes 1-->
     <div class="container w-75">
       <div class="d-grid gap-2">
-        <button onclick="window.location.href='horario.html'" type="button" id="btn-1" class="btn btn-success background-green-col mt-5 d-inline-block p-3"><span>Horários de Aula</span>
+        <button onclick="window.location.href='horario.html'" type="button" id="btn-1" class="btn btn-success background-green-col fw-bold mt-5 d-inline-block p-3"><span>Horários de Aula</span>
         </button>
-        <button onclick="window.location.href='calendario.html'" type="button" class="btn btn-success background-green-col p-3">Calendário Acadêmico</button>
-        <button onclick="window.location.href='pendentes.html'" type="button" class="btn btn-success background-green-col p-3">
+        <button onclick="window.location.href='calendario.html'" type="button" class="btn btn-success background-green-col fw-bold p-3">Calendário Acadêmico</button>
+        <button onclick="alertMsg()" type="button" class="btn btn-success background-green-col fw-bold p-3">
           Atividades Pendentes
         </button>
-        <button onclick="window.location.href='guias.html'" type="button" class="btn btn-success background-green-col p-3">
+        <button onclick="window.location.href='guias.html'" type="button" class="btn btn-success background-green-col fw-bold p-3">
           Guias de Programação
         </button>       
       </div>
-    
-
-       <!--Container de botoes 2-->
-      <!--<div class="d-grid">
-        <button type="button" class="btn btn-success background-green-col">Função 4</button>
-      </div>-->
-
-      <!--Container de botoes 3-->
+      
       <div class="d-grid gap-2">
-        <!--<button type="button" class="btn btn-success background-green-col mt-4">
-          Informações - SIT
-        </button>-->
-        <button onclick="window.location.href='help.html'" type="button" class="btn btn-success background-green-col mt-4 p-3">Contato & Suporte</button>
-        <button onclick="window.location.href='sobre.html'" type="button" class="btn btn-success background-green-col d-inline-block p-3">Sobre</button>
+        <button onclick="window.location.href='help.html'" type="button" class="btn btn-success background-green-col fw-bold mt-4 p-3">Contato & Suporte</button>
+        <button onclick="window.location.href='sobre.html'" type="button" class="btn btn-success background-green-col d-inline-block fw-bold p-3">Sobre</button>
       </div>
         
       
@@ -59,6 +49,7 @@
 
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="firebase.js"></script>
+    <script type="text/javascript" src="index.js"></script>
     <script type="text/javascript" src="liveClock.js"></script> 
   </body>
 </html>

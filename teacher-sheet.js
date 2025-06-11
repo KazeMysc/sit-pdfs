@@ -1,5 +1,7 @@
 const classContainer = document.querySelector('#teacherInfo');
 
+
+
 const hot = new Handsontable(classContainer, {
   data: [
     // 0
@@ -168,17 +170,18 @@ const hot = new Handsontable(classContainer, {
   licenseKey: 'non-commercial-and-evaluation', //propósitos não comerciais
 });
 
-// A idéia desse código é mostrar comentários onclick mobile
+// A idéia desse código é mostrar comentários quando o usuário clica no celular, já que não é possível, por padrão, no celular
+// Usa hooks e eventos do HandsOnTable
 hot.addHook('afterOnCellMouseDown', function(event, coords) {
     if (coords.row >= 0 && coords.col >= 0) { // Verifica se é uma célula válida
         const commentPlugin = hot.getPlugin('comments'); 
         const comment = commentPlugin.getCommentAtCell(coords.row, coords.col); 
 
-        if (comment) { // Só exibe o comentário se houver um
+        if (comment) { // Só exibe o comentário se houver um. Gera atraso de alguns ms na exibição
             commentPlugin.showAtCell(coords.row, coords.col);
         }
         else {
-          return;
+          return; // Caso contrário, encerra o if 
         }
     }
 });
